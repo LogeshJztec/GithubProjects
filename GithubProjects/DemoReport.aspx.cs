@@ -30,9 +30,9 @@ public partial class DemoReport : System.Web.UI.Page
             table.Columns.Add("rcount", typeof(string));
             table.Columns.Add("percentage", typeof(string));
 
-            table.Rows.Add("Complied", "1", "33");
-            table.Rows.Add("In Progress", "2", "33");
-            table.Rows.Add("Not Complied", "4", "34");
+            table.Rows.Add("Complied", "1", "20");
+            table.Rows.Add("In Progress", "2", "20");
+            table.Rows.Add("Not Complied", "4", "60");
 
             ReportViewer1.ProcessingMode = ProcessingMode.Local;
             ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/DemoReport.rdlc");
